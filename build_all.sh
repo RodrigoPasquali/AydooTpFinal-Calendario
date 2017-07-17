@@ -3,8 +3,8 @@
 set -e
 
 for dir in */ ; do
-  cd $dir
-  bundle install
-  rake
-  cd ..
-done
+    cd $dir
+    bundle install
+    bundle exec rake
+    cd ..
+done 
